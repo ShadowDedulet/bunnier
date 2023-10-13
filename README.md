@@ -1,3 +1,5 @@
+[![test](https://github.com/ShadowDedulet/bunnier/actions/workflows/test.yml/badge.svg?event=push)](https://github.com/ShadowDedulet/bunnier/actions/workflows/test.yml)
+
 # Bunnier
 
 TODO: Delete this and the text below, and describe your gem

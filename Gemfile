@@ -1,12 +1,21 @@
 # frozen_string_literal: true
 
-source "https://rubygems.org"
+source 'http://rubygems.org'
 
 # Specify your gem's dependencies in bunnier.gemspec
 gemspec
 
-gem "rake", "~> 13.0"
+group :development, :test, :ci_test do
+  gem 'simplecov', '~> 0.20'
+  gem 'simplecov-cobertura', '~> 2.0'
+end
 
-gem "rspec", "~> 3.0"
+group :test, :ci_test do
+  gem 'rspec', '~> 3.0'
+  gem 'rspec_junit_formatter', '~> 0.6.0'
+  gem 'rubocop', '~> 1.20'
+end
 
-gem "rubocop", "~> 1.21"
+group :development do
+  gem 'byebug', '~> 11.0'
+end

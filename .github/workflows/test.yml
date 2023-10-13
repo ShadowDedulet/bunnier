@@ -1,0 +1,33 @@
+name: test
+
+on:
+  pull_request:
+    types: [opened, reopened]
+  push:
+    branches:
+      - master
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: 3.2.2
+
+    - name: Install Bundler
+      run: gem install bundler
+
+    - name: Install dependencies
+      run: bundle install
+
+    - name: Run Rubocop
+      run: bundle exec rubocop
+
+    - name: Run RSpec
+      run: bundle exec rspec

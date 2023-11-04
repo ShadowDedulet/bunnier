@@ -1,4 +1,4 @@
-[![test](https://github.com/ShadowDedulet/bunnier/actions/workflows/test.yml/badge.svg?event=push)](https://github.com/ShadowDedulet/bunnier/actions/workflows/test.yml)
+[![build-rubocop-rspec](https://github.com/ShadowDedulet/bunnier/actions/workflows/build-rubocop-rspec.yml/badge.svg?event=push)](https://github.com/ShadowDedulet/bunnier/actions/workflows/build-rubocop-rspec.yml)
 
 # Bunnier
 

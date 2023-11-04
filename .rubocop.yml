@@ -1,6 +1,8 @@
 AllCops:
-  TargetRubyVersion: 2.0
+  TargetRubyVersion: 2.4
   NewCops: enable
+  Exclude:
+    - 'tmp/*'
 
 Layout/LineLength:
   Max: 120

@@ -1,7 +1,8 @@
 # frozen_string_literal: true
 
-require 'bunnier'
 require 'simplecov_helper' if ENV['COVERAGE']
+
+require 'bunnier'
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

@@ -18,4 +18,5 @@ end
 
 group :development do
   gem 'byebug', '~> 11.0'
+  gem 'yard', '~> 0.9'
 end
